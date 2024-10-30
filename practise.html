@@ -1,68 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-<script>
-
-function validateFields(){
-
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
-  let message = document.getElementById("message").value;
-
-  if(name===""||message ===""){
-
-    alert("Name and Message field cannot be blank");
-    return false;
-
-  }
-
-  if(phone.length !==10 || isNaN(phone)){
-    alert("Phone number must be 10 digit.");
-    return false;
-  }
-
-  if((!email.include("@")|| !email.include(".") )) {
-    alert("Email must be in a valid format like mynamme@abc.com");
-    return false;
-  }
-
-  return true;
-
-}
-
-  
-
-</script>
-
 </head>
 <body>
-
-<h2>Contact Us</h2>
-
-<form onsubmit="return validateFields()">
-
-<lable for="name">Name :</lable>
-<input type="text" id="name" name="name"><br><br>
-
-<lable for="email">Email :</lable>
-<input type="text" id="email" name="email"><br><br>
-
-<label for="phone">Phone Number :</label>
-<input type="text" id="phone" name="phone"><br><br>
-
-<label for="message">Message :</label><br>
-<textarea id="message" name="message" raws="4" cols="50"></textarea><br><br>
-
-<input type="submit" value="Submit">
-
-</form>
-
   
 
+
+
+  
 </body>
 </html>
